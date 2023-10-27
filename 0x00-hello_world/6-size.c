@@ -1,4 +1,4 @@
-#include <stddio.h>
+#include <stdio.h>
 /**
  * main - Knowing the size of data types
  * Return: 0
