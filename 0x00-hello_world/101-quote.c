@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unstdio.h>
 /**
  * main - Not using printf or puts function
