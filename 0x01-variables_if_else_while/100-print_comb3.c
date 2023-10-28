@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main -  Inventing is a combination of brains and materials
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	int d, t;
 
