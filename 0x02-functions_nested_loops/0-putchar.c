@@ -1,11 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - A program to print '_putchar'
  * Return: 0 (Success)
+ * void _putchar - Entry point
  */
-int _putchar(char c);
 int main(void)
 {
+	_putchar();
+	return (0);
+}
+void _putchar(void)
+	{
 	putchar('_');
 	putchar('p');
 	putchar('u');
@@ -15,6 +21,5 @@ int main(void)
 	putchar('a');
 	putchar('r');
 	putchar('\n');
-	return (0);
-}
-
+	return;
+	}
