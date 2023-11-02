@@ -13,8 +13,8 @@ int main(void)
 	{
 	b += i;
 	}
-	i++
 	}
+	i++
 	printf("%d\n", b);
 	return (0);
 }
