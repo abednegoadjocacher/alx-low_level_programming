@@ -24,8 +24,8 @@ void print_tab(char **tab)
  * Return: 1 if an error occurred, 0 otherwise
  */
 int main(void)
-
-	char **tab;
+{
+char **tab;
 
 	tab = strtow("      ALX School         #cisfun      ");
 	if (tab == NULL)
