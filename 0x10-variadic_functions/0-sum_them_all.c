@@ -7,16 +7,23 @@
  * Return: 0
  * Otherwise - the sum of all parameters.
  */
-	int sum_them_all(const unsigned int n, ...)
-	{
-		unsigned int j, sum = 0;
-		va_list add;
+int sum_them_all(const unsigned int n, ...)
+{
+	unsigned int j, sum = 0;
+	va_list add;
 
-		va_start(add, n);
-		for (j = 0; j < n; j++)
-		{
-		sum += va_arg(add, const unsigned int);
-		}
-		va_end(add);
-		return (sum);
+	va_start(add, n);
+	for (j = 0; j < n; j++)
+	{
+	if (n == 0)
+	{
+	return (0);
 	}
+	else
+	{
+	sum += va_arg(add, const unsigned int);
+	}
+	}
+	va_end(add);
+	return (sum);
+}
