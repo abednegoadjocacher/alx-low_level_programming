@@ -15,14 +15,7 @@
 		va_start(add, n);
 		for (j = 0; j < n; j++)
 		{
-			if (n == 0)
-			{
-			return (0);
-			}
-			else
-			{
-			sum += va_arg(add, const unsigned int);
-			}
+		sum += va_arg(add, const unsigned int);
 		}
 		va_end(add);
 		return (sum);
