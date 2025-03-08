@@ -22,6 +22,8 @@ int main(void)
 			putchar(out_number + '0');
 			putchar(in_number + '0');
 			in_number++;
+			if (out_number == 8)
+				break;
 			putchar(',');
 			putchar(' ');
 		}
