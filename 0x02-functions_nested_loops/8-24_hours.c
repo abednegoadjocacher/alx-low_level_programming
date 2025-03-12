@@ -11,27 +11,54 @@ void jack_bauer(void)
 	first_hr = second_hr = mins = sec = 0;
 	while (first_hr <= 2)
 	{
-		second_hr = 0;
-		while (second_hr <= 3)
+		if (first_hr != 2)
 		{
-			mins = 0;
-			while (mins <= 5)
+			second_hr = 0;
+			while (second_hr <= 9)
 			{
-				sec = 0;
-				while (sec <= 9)
+				mins = 0;
+				while (mins <= 5)
 				{
-					_putchar(first_hr + '0');
-					_putchar(second_hr + '0');
-					_putchar(':');
-					_putchar(mins + '0');
-					_putchar(sec + '0');
-					sec++;
-					_putchar('\n');
+					sec = 0;
+					while (sec <= 9)
+					{
+						_putchar(first_hr + '0');
+						_putchar(second_hr + '0');
+						_putchar(':');
+						_putchar(mins + '0');
+						_putchar(sec + '0');
+						sec++;
+						_putchar('\n');
+					}
+					mins++;
 				}
-			mins++;
+				second_hr++;
+			}
 		}
-		second_hr++;
-	}
-	first_hr++;
-}
+			else
+			{
+				 second_hr = 0;
+                        	while (second_hr <= 3)
+                        	{
+                                	mins = 0;
+                                	while (mins <= 5)
+                                	{
+                                        	sec = 0;
+                                        	while (sec <= 9)
+                                        	{
+                                                	_putchar(first_hr + '0');
+                                                	_putchar(second_hr + '0');
+                                                	_putchar(':');
+                                                	_putchar(mins + '0');
+                                                	_putchar(sec + '0');
+                                                	sec++;
+                                                	_putchar('\n');
+                                      		}
+                                	mins++;
+                        	}
+                        	second_hr++;
+			}
+			}
+			first_hr++;
+		}
 }
