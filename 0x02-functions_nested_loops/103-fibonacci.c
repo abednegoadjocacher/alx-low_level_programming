@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int start, count, sum, next;
+	int start, sum, next;
 
 	start = 1;
 	sum = 2;
@@ -16,14 +16,10 @@ int main(void)
 		next = sum + start;
 		start = sum;
 		sum = next;
-		if (next <= 4000000)
-		{
-			if (next % 2 == 0)
-				printf("%d\n", next);
-		}
-		else
+		if (next > 4000000)
 			break;
-		count++;
+		if (next % 2 == 0)
+			printf("%d\n", next);
 	}
 	return (0);
 }
