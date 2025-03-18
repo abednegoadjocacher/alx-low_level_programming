@@ -11,7 +11,7 @@ int main(void)
 	start = 1;
 	count = 2;
 	sum = 2;
-	printf("%d\n%d\n", start, sum);
+	printf("%d\n", sum);
 	while (count != 0)
 	{
 		next = sum + start;
