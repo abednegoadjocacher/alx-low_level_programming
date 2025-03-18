@@ -9,10 +9,9 @@ int main(void)
 	int start, count, sum, next;
 
 	start = 1;
-	count = 2;
 	sum = 2;
 	printf("%d\n", sum);
-	while (count != 0)
+	while (sum <= 4000000)
 	{
 		next = sum + start;
 		start = sum;
