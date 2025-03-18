@@ -10,7 +10,7 @@ int main(void)
 
 	start = 1;
 	sum = 2;
-	printf("%d\n", sum);
+	printf("%d\n%d\n", start, sum);
 	while (sum <= 4000000)
 	{
 		next = sum + start;
