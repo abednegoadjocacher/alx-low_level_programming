@@ -27,5 +27,5 @@ int _atoi(char *s)
 	}
 	if (sign == 1)
 		return (-result);
-	return (result);
+	return (sign * result);
 }
