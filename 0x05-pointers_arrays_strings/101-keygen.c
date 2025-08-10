@@ -6,5 +6,5 @@ int main()
     srand(time(NULL));
     
     printf("%d\n", rand());
-	return (0);;
+	return (0);
 }
