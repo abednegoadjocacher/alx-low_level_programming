@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * cap_string - the funnction capitalize
+ * cap_string - The function capitalize the beginning letters of word
  * @s: the pointer to string
  *
- * Return string
+ * Return: string
  */
 
 char *cap_string(char *s)
@@ -14,8 +14,14 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == ' ' || s[i] == '\t' || s[i] == '.' || s[i] == ',' || s[i] == '"' || s[i] == '?' || s[i] == '!' || s[i] == ';' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}' || s[i] == '\n')
+		if (s[i] == ' ' || s[i] == '\t' || s[i] == '.' || s[i] == ',' ||
+			s[i] == '"' || s[i] == '?' || s[i] == '!' || s[i] == ';' ||
+			s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}' || s[i] == '\n')
 		{
+			if (s[i] == '\t')
+			{
+				s[i] = ' ';
+			}
 			flag = 1;
 		}
 		else if  (flag && s[i] >= 97 && s[i] <= 122)
