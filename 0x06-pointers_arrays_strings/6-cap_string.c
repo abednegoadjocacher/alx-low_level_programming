@@ -20,7 +20,7 @@ char *cap_string(char *s)
 		{
 			if (s[i] == '\t')
 			{
-				s[i] = ' ';
+				s[i] = '	';
 			}
 			flag = 1;
 		}
