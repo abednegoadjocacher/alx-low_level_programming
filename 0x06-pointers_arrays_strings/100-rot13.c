@@ -9,17 +9,17 @@
 char *rot13(char *s)
 {
 	int i = 0, j;
-	char mixed_alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char reverse_mixed_alpha[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuuvwxyzabcdefghijklm";
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char revA[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuuvwxyzabcdefghijklm";
 
 	while (s[i] != '\0')
 	{
 		j = 0;
-		while (mixed_alpha[j] != '\0')
+		while (alpha[j] != '\0')
 		{
-			if (s[i] == mixed_alpha[j])
+			if (s[i] == alpha[j])
 			{
-				s[i] = reverse_mixed_alpha[j];
+				s[i] = revA[j];
 				break;
 			}
 			j++;
