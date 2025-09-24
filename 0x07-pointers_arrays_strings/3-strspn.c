@@ -5,8 +5,8 @@
  * @accept: pointer to string
  * Return: number of bytes
  */
- unsigned int _strspn(char *s, char *accept)
- {
+unsigned int _strspn(char *s, char *accept)
+{
     int lenght = 0;
     int j;
     int found;
@@ -24,11 +24,11 @@
             }
             j++;
         }
-       if (found == 1)
-       {
+        if (found == 1)
+        {
             break;
-       }
+        }
         lenght++; 
     }
     return (lenght);
- }
+}
