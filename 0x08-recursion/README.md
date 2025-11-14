@@ -1,0 +1,13 @@
+# Recursion in C
+Recursion is when a function calls itself either directly or indirectly.
+## Tasks:
+1. A function that prints strings recursively
+2. A function that prints strings in reverse order.
+3. A function that returns the length of a string.
+4. A function that returns the factorial of a number.
+5. A function that returns the value of x raised to the power of y.
+6. A function that returns the natural square root of a number.
+7. A function that returns 1 if the input integer is a prime number, otherwise return 0.
+8. A function that returns 1 if a string is a palindrome and 0 if not.
+9. A function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
+
